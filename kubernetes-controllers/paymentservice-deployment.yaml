@@ -6,7 +6,7 @@ metadata:
     app: paymentservice
     tier: paymentservice
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: paymentservice
