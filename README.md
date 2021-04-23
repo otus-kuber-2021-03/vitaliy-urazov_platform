@@ -35,3 +35,13 @@ kubectl rollout status deployment/frontend
 
 ```
 
+### kubernamtes-security
+
+```
+kubectl create serviceaccount bob
+kubectl create clusterrolebinding bob-cluster-admin-binding --clusterrole=cluster-admin --serviceaccount=default:bob -o yaml
+kubectl create serviceaccount dave
+
+k create namespace prometheus -o yaml
+kubectl create serviceaccount bob
+```
